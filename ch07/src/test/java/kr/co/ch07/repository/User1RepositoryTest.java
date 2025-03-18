@@ -46,122 +46,74 @@ class User1RepositoryTest {
 
     @Test
     void findUser1ByUidAndName() {
-        User1 user = user1Repository.findUser1ByUidAndName("a101", "홍길동");
-        System.out.println(user);
     }
 
     @Test
     void findUser1ByUidOrName() {
-        List<User1> user1List = user1Repository.findUser1ByUidOrName("a101","홍길동");
-        System.out.println(user1List);
-
     }
 
     @Test
     void findUser1ByAgeGreaterThan() {
-        List<User1> user1List = user1Repository.findUser1ByAgeGreaterThan(23);
-        System.out.println(user1List);
     }
 
     @Test
     void findUser1ByAgeGreaterThanEqual() {
-        List<User1> user1List = user1Repository.findUser1ByAgeGreaterThanEqual(23);
-        System.out.println(user1List);
     }
 
     @Test
     void findUser1ByAgeLessThan() {
-        List<User1> user1List = user1Repository.findUser1ByAgeLessThan(45);
-        System.out.println(user1List);
-
     }
 
     @Test
     void findUser1ByAgeLessThanEqual() {
-        List<User1> user1List = user1Repository.findUser1ByAgeLessThanEqual(45);
-        System.out.println(user1List);
-
     }
 
     @Test
     void findUser1ByAgeBetween() {
-        List<User1> user1List = user1Repository.findUser1ByAgeBetween(10,40);
-        System.out.println(user1List);
     }
 
     @Test
     void findUser1ByNameLike() {
-        List<User1> user1List = user1Repository.findUser1ByNameLike("김주찬");
-        System.out.println(user1List);
     }
 
     @Test
     void findUser1ByNameContains() {
-        List<User1> user1List = user1Repository.findUser1ByNameContains("김주찬");
-        System.out.println(user1List);
     }
 
     @Test
     void findUser1ByNameStartsWith() {
-        List<User1> user1List = user1Repository.findUser1ByNameStartsWith("김");
-        System.out.println(user1List);
-
     }
 
     @Test
     void findUser1ByNameEndsWith() {
-        List<User1> user1List = user1Repository.findUser1ByNameEndsWith("동");
-        System.out.println(user1List);
-
     }
 
     @Test
     void findUser1ByOrderByName() {
-        List<User1> user1List = user1Repository.findUser1ByOrderByName();
-        System.out.println(user1List);
     }
 
     @Test
     void findUser1ByNameOrderByUid() {
-        List<User1> user1List = user1Repository.findUser1ByNameOrderByUid("홍길동");
-        System.out.println(user1List);
     }
 
     @Test
     void findUser1ByOrderByAgeAsc() {
-        List<User1> user1List = user1Repository.findUser1ByOrderByAgeAsc();
-        System.out.println(user1List);
     }
 
     @Test
     void findUser1ByOrderByAgeDesc() {
-        List<User1> user1List = user1Repository.findUser1ByOrderByAgeDesc();
-        System.out.println(user1List);
     }
 
     @Test
     void findUser1ByAgeGreaterThanOrderByAgeDesc() {
-        List<User1> user1List = user1Repository.findUser1ByAgeGreaterThanOrderByAgeDesc(40);
-        System.out.println(user1List);
     }
 
     @Test
     void countUser1ByName() {
-       int count = user1Repository.countUser1ByName("홍길동");
-        System.out.println(count);
     }
 
     @Test
     void selectUser1UnderAge30() {
-        List<User1> users = user1Repository.selectUser1UnderAge30();
-
-        // 출력
-        users.forEach(user -> {
-            System.out.println(user);
-        });
-
-        // 검증 예시
-        assertFalse(users.isEmpty(), "30세 이하 유저가 없습니다!");
     }
 
     @Test

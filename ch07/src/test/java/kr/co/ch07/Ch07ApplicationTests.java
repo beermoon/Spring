@@ -10,6 +10,4 @@ class Ch07ApplicationTests {
     void contextLoads() {
     }
 
-
-
 }

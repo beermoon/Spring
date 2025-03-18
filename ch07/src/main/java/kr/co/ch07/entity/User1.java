@@ -36,7 +36,6 @@ public class User1 {
                 .name(name)
                 .hp(hp)
                 .age(age)
-
                 .build();
     }
 

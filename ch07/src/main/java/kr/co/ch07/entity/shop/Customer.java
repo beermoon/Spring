@@ -1,4 +1,4 @@
-package kr.co.ch07.entity.board;
+package kr.co.ch07.entity.shop;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -9,20 +9,21 @@ import org.hibernate.annotations.CreationTimestamp;
 import java.time.LocalDateTime;
 
 @Getter
-@NoArgsConstructor
 @AllArgsConstructor
-@Builder
+@NoArgsConstructor
 @ToString
+@Builder
 @Entity
-@Table(name = "Board_User")
-public class User {
+@Table(name = "shop_customer")
+public class Customer {
 
     @Id
-    private String uid;
+    private String custId;
     private String name;
+    private int age;
     private String hp;
 
-
-    @CreationTimestamp // mysql NOW()
+    @CreationTimestamp
     private LocalDateTime regDate;
+
 }

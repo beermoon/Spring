@@ -112,7 +112,7 @@ class ShopRepositoryTest {
 
     @Test
     public void test8(){
-        // select ~ where name like '%신'
+        // select ~ where name like '%신'3
         List<Customer> customers = jpaQueryFactory
                 .selectFrom(qCustomer)
                 .where(qCustomer.name.like("%신"))
